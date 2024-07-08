@@ -192,7 +192,7 @@
                     {
                         <button type="submit" asp-action="SubscriptionOperation" asp-route-subscriptionId="@Model.Id" asp-route-planId="@Model.PlanId" asp-route-operation="Deactivate" class="cm-button-danger text-right">Unsubscribe</button>
                         <button type="submit" asp-action="Subscriptions" class="cm-button-default text-end">Go to Subscription List</button>
-                        <a href="https://studio.shorthills.ai/sign-in" class="cm-button-default text-end" target="_blank">Go To Dashboard</a> <!-- New button added here -->
+                        <a href="https://studio.shorthills.ai/sign-in" class="cm-button-default text-end" target="_blank">Go To AI Studio</a> <!-- New button added here -->
                     }
                     @if (Model.SubscriptionStatus == SubscriptionStatusEnumExtension.PendingFulfillmentStart && Model.IsAutomaticProvisioningSupported == true)
                     {
